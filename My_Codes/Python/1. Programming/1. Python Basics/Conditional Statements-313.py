@@ -8,7 +8,7 @@ apps_data = list(read_file)
 free_apps_ratings = []
 for row in apps_data[1:]:
     rating = float(row[7])
-    # Complete the code from here
+    
     price=float(row[4])
     if price == 0.0:
         free_apps_ratings.append(rating)
@@ -73,7 +73,7 @@ for row in apps_data[1:]:
     rating = float(row[7])
     price = float(row[4])
     genre = row[11]
-    # Complete code from here
+    
     if price == 0.0 and genre=="Games":
         free_games_ratings.append(rating)
         
@@ -91,7 +91,7 @@ games_social_ratings = []
 for row in apps_data[1:]:
     rating = float(row[7])
     genre = row[11]
-    # Complete code from here
+    
     if genre == "Social Networking" or genre=="Games":
         games_social_ratings.append(rating)
         
